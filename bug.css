@@ -1,0 +1,10 @@
+The following CSS code causes unexpected behavior in certain browsers:
+
+```css
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+This code works as expected in most browsers, but some older browsers might not render the `width: 50%;` correctly if the parent element doesn't have a defined width. The floating element might not take up the expected 50% of the parent.
