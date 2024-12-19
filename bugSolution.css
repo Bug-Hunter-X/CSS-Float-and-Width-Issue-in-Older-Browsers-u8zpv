@@ -1,0 +1,23 @@
+To solve the problem, ensure the parent element has a defined width. For example:
+
+```css
+.container {
+  width: 100%; /* Or a fixed width like 800px */
+}
+div {
+  width: 50%;
+  float: left;
+}
+```
+
+Alternatively, consider using Flexbox or Grid for more reliable and modern layout management.  Flexbox is often preferred for simpler layouts:
+
+```css
+.container {
+  display: flex;
+}
+div {
+  width: 50%;
+}
+```
+This eliminates the need for floating and provides a cleaner, more predictable solution.
